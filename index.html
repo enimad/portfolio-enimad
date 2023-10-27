@@ -11,35 +11,69 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div class="logo">
-            <p>Amine Djellab</p>
-        </div>
         <nav>
+            <a href="#" class="logo" data-hover="Amine Djellab">Amine D<span>.ev</span></a>
             <ul>
-                <li>Accueil</li>
-                <li>Moi, Amine</li>
-                <li>Mes projets</li>
-                <li>Me contacter</li>
+                <li><a href="#about">Infos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id="nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </ul>
         </nav>
+        <ul class="nav-mobile">
+            <li><a href="#about">Infos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
     <main>
-        <section class="section-hero"></section>
-        <section class="section-about"></section>
-        <section class="section-projects"></section>
-        <section class="section-contact"></section>
+        <section class="section-hero">
+            <h1>Développeur web React | Diplômé et proactif dans mon apprentissage</h1>
+            <img class="img" src="./assets/images/coding-picture.svg" alt="Coding">
+            <!-- <a href="https://storyset.com/work">Work illustrations by Storyset</a> -->
+            <p>Hello (world)! Je m'appelle <span>Amine Djellab</span>, je suis un <span>développeur web passionné et
+                    rigoureux</span>. Si vous
+                êtes ici pour voir mes
+                <a href="#projects">projets</a> ou en savoir plus sur <a href="#about">moi</a>, vous êtes au bon endroit
+                &#x1F590;
+            </p>
+            <h2>Stack technique</h2>
+            <div class="stack-icons">
+                <img src="./assets/images/icons/icon-html-5.png" alt="html5 icon">
+                <img src="./assets/images/icons/icon-css-3.png" alt="css3 icon">
+                <img src="./assets/images/icons/icon-sass.png" alt="sass icon">
+                <img src="./assets/images/icons/icon-javascript.png" alt="javascript icon">
+                <img src="./assets/images/icons/icon-react.png" alt="react icon">
+                <img src="./assets/images/icons/icon-mongodb.png" alt="mongodb icon">
+            </div>
+        </section>
+        <section class="section-about" id="about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum natus iusto in ea similique harum aliquam
+            dolore sint minus, vel inventore, ad nesciunt quod quos voluptas iste officiis neque consequuntur?
+
+            <button>Télécharger CV</button>
+        </section>
+        <section class="section-projects" id="projects"></section>
+        <section class="section-contact" id="contact"></section>
     </main>
 
-    <footer>
 
+    <footer>
+        <p>V.1 - 25.10.2023</p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 30px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 500;
+            // PARTIE DESKTOP
+            // &:hover {
+            //     font-size: 0;
+
+            //     &::after {
+            //         content: attr(data-hover);
+            //         font-size: 1.3rem;
+            //         color: rgb(12, 103, 189);
+            //     }
+            // }
+        }
+
+        span {
+            color: rgb(12, 103, 189);
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                display: none;
+            }
+
+            button {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                height: 16px;
+                width: 20px;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                span {
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000;
+                }
+
+                &.is-active {
+                    justify-content: center;
+
+                    span {
+                        transition: 0.3s ease-in;
+
+                        &:first-child {
+                            transform: translateY(50%) rotate(45deg);
+                        }
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        align-items: center;
+        justify-content: center;
+        gap: 95px;
+        position: fixed;
+        background-color: #ffffff;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+
+        &.active {
+            right: 0;
+        }
+
+        li {
+            font-size: 1.3rem;
+            font-weight: 500;
+            ;
+        }
+    }
+}
+
+
+
+main {
+    padding: 30px 20px;
+
+    .section {
+        &-hero {
+            height: 98vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 320px;
+                height: auto;
+            }
+
+            h1,
+            p {
+                text-align: center;
+            }
+
+            p a {
+                text-decoration: underline wavy rgb(12, 103, 189);
+            }
+
+            span {
+                color: rgb(12, 103, 189);
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-top: 45px;
+            }
+
+            .stack-icons {
+                margin-top: 5px;
+                padding-top: 15px;
+                border-top: solid 2px grey;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        border-radius: 8px;
+                    }
+                }
+
+
+            }
+        }
+
+        &-about {}
+
+        &-projects {}
+
+        &-contact {}
+    }
+}
