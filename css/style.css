@@ -7,18 +7,31 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: #000;
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+* h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+* h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+* h3 {
+  font-size: 1.2rem;
+  color: rgb(44, 44, 44);
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 header nav {
   display: flex;
@@ -32,6 +45,7 @@ header nav .logo {
   font-weight: 500;
 }
 header nav span {
+  font-size: 1.3rem;
   color: rgb(12, 103, 189);
 }
 header nav ul {
@@ -93,26 +107,25 @@ header .nav-mobile {
   justify-content: center;
   gap: 95px;
   position: fixed;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 header .nav-mobile.active {
   right: 0;
 }
-header .nav-mobile li {
-  font-size: 1.3rem;
+header .nav-mobile a {
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
-main {
-  padding: 30px 20px;
-}
 main .section-hero {
-  height: 98vh;
+  padding: 30px 20px;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f8f8f8;
 }
 main .section-hero img {
   width: 320px;
@@ -129,13 +142,12 @@ main .section-hero span {
   color: rgb(12, 103, 189);
 }
 main .section-hero h2 {
-  font-size: 1.2rem;
   margin-top: 45px;
 }
 main .section-hero .stack-icons {
   margin-top: 5px;
   padding-top: 15px;
-  border-top: solid 2px grey;
+  border-top: solid 1px rgb(12, 103, 189);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -147,6 +159,65 @@ main .section-hero .stack-icons img {
 }
 main .section-hero .stack-icons img:nth-child(4), main .section-hero .stack-icons img:nth-child(5) {
   border-radius: 8px;
+}
+main .section-about {
+  padding: 30px 20px;
+}
+main .section-about .container-title-cv {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section-about span {
+  color: rgb(12, 103, 189);
+}
+main .section-projects {
+  padding: 30px 20px;
+  background-color: #f8f8f8;
+}
+main .section-projects h2 {
+  margin-bottom: 15px;
+}
+main .section-projects .section-intro {
+  margin-bottom: 30px;
+}
+main .section-projects .project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 13px;
+}
+main .section-projects .project-container .project-img-container {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+main .section-projects .project-container .project-img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+main .section-projects .project-container-links {
+  display: flex;
+}
+main .section-contact {
+  padding: 30px 20px;
+}
+main .section-contact h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 30px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
