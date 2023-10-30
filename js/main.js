@@ -13,3 +13,10 @@ links.forEach((link) => {
         navMobile.classList.remove("active");
     })
 })
+
+// Fonction qui assure la fermeture du menu de nav mobile en cas de clic sur le logo du site
+const logo = document.querySelector(".logo");
+logo.addEventListener("click", () => {
+    nav.classList.remove("is-active");
+    navMobile.classList.remove("active");
+})
