@@ -30,6 +30,9 @@ html {
 * p {
   text-align: justify;
 }
+* span {
+  color: rgb(12, 103, 189);
+}
 
 header {
   position: sticky;
@@ -125,7 +128,7 @@ header .nav-mobile a {
 
 main .section-hero {
   padding: 30px 20px;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,10 +143,10 @@ main .section-hero p {
   text-align: center;
 }
 main .section-hero p a {
-  text-decoration: underline wavy rgb(12, 103, 189);
-}
-main .section-hero span {
-  color: rgb(12, 103, 189);
+  background-color: rgb(12, 103, 189);
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 main .section-hero h2 {
   margin-top: 45px;
@@ -167,16 +170,13 @@ main .section-hero .stack-icons img:nth-child(4), main .section-hero .stack-icon
 main .section-about {
   padding: 30px 20px;
 }
-main .section-about span {
-  color: rgb(12, 103, 189);
-}
 main .section-about p {
   margin-bottom: 25px;
 }
 main .section-about .container-btn {
   text-align: center;
 }
-main .section-about .container-btn button {
+main .section-about .container-btn a {
   background-color: #fff;
   padding: 5px 15px;
   border-radius: 8px;
@@ -241,9 +241,46 @@ main .section-projects .project-container .project-links a {
 main .section-contact {
   padding: 30px 20px;
 }
+main .section-contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  background-color: rgb(12, 103, 189);
+  color: #fff;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin: 30px auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+main .section-contact a img {
+  width: 30px;
+  height: auto;
+  filter: invert(1);
+}
 
 footer {
-  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(60, 60, 60);
+}
+footer p {
+  color: #fff;
+}
+footer .social-networks-container {
+  display: flex;
+  gap: 15px;
+}
+footer .social-networks-container img {
+  filter: invert(1);
+}
+footer .social-networks-container a {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,10 @@ html {
     p {
         text-align: justify;
     }
+
+    span {
+        color: rgb(12, 103, 189);
+    }
 }
 
 header {
@@ -167,7 +171,7 @@ main {
         &-hero {
             padding: 30px 20px;
 
-            height: 95vh;
+            height: 100vh;
 
             display: flex;
             flex-direction: column;
@@ -186,12 +190,13 @@ main {
             }
 
             p a {
-                text-decoration: underline wavy rgb(12, 103, 189);
+                background-color: rgb(12, 103, 189);
+                color: #fff;
+                padding: 0 5px;
+                border-radius: 5px;
             }
 
-            span {
-                color: rgb(12, 103, 189);
-            }
+
 
             h2 {
                 margin-top: 45px;
@@ -224,9 +229,7 @@ main {
         &-about {
             padding: 30px 20px;
 
-            span {
-                color: rgb(12, 103, 189);
-            }
+
 
             p {
                 margin-bottom: 25px;
@@ -235,7 +238,7 @@ main {
             .container-btn {
                 text-align: center;
 
-                button {
+                a {
                     background-color: #fff;
                     padding: 5px 15px;
                     border-radius: 8px;
@@ -321,11 +324,55 @@ main {
 
         &-contact {
             padding: 30px 20px;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.3rem;
+                background-color: rgb(12, 103, 189);
+                color: #fff;
+                width: fit-content;
+                padding: 5px 15px;
+                border-radius: 8px;
+                margin: 30px auto 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+                img {
+                    width: 30px;
+                    height: auto;
+                    filter: invert(1);
+                }
+            }
+
         }
     }
 }
 
 footer {
-    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(60 60 60);
 
+    p {
+        color: #fff;
+
+    }
+
+    .social-networks-container {
+        display: flex;
+        gap: 15px;
+
+        img {
+            filter: invert(1);
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
