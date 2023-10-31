@@ -152,7 +152,7 @@ main .section-hero h2 {
   margin: 45px 0 10px;
 }
 main .section-hero .stack-icons {
-  padding-top: 15px;
+  padding: 20px 0;
   border-top: solid 1px rgb(60, 60, 60);
   display: flex;
   align-items: center;
@@ -213,7 +213,7 @@ main .section-projects .project-container .project-img-container {
 main .section-projects .project-container .project-img-container img {
   position: absolute;
   transform: translateY(0px);
-  transition: transform 3s ease-in-out 0s;
+  transition: transform 4s ease-in-out;
   width: 100%;
 }
 main .section-projects .project-container .project-img-container img.active {
