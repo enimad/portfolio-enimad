@@ -36,3 +36,29 @@ for (let i = 0; i < imgProjectContainer.length; i++) {
     })
 }
 
+fetch("../assets/data/projects.json")
+    .then(res => res.json())
+    .then(data => {
+        // const ulElement = document.querySelector("ul");
+
+        // const liElement = document.createElement("li");
+
+        // const aElement = document.createElement("a");
+        // aElement.href = "#";
+        // aElement.textContent = e;
+
+        // liElement.appendChild(aElement);
+
+        // ulElement.appendChild(liElement);
+
+        // const links = document.querySelectorAll("nav li");
+        // links.forEach((link) => {
+        //     link.addEventListener("click", () => {
+        //         nav.classList.remove("active");
+        //     })
+        // })
+        console.log(data)
+    })
+    .catch(e => {
+        console.log(e);
+    })

@@ -1,0 +1,42 @@
+[
+    {
+        "image": {
+            "src": "./assets/images/projects/screenshot-booki.png",
+            "alt": "website screenshot"
+        },
+        "title": "Booki",
+        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but d'intégrer la maquette d'une page d'accueil d'un site similaire à Airbnb. Ce site a été codé en <span>HTML</span> et CSS.",
+        "codeHref": "https://github.com/enimad/Booki",
+        "liveHref": "https://enimad.github.io/Booki/"
+    },
+    {
+        "image": {
+            "src": "./assets/images/projects/screenshot-ohmyfood.png",
+            "alt": "website screenshot"
+        },
+        "title": "Ohmyfood",
+        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques, en respectant les animations et comportements présentés sur la maquette Figma. Ce site a été codé en HTML, CSS, et SCSS en utilisant le préprocesseur Sass.",
+        "codeHref": "https://github.com/enimad/Ohmyfood",
+        "liveHref": "https://enimad.github.io/Ohmyfood/"
+    },
+    {
+        "image": {
+            "src": "./assets/images/projects/screenshot-???.png",
+            "alt": "website screenshot"
+        },
+        "title": "Kanap",
+        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but de construire un site e-commerce dynamique à partir des travaux des équipes frontend et backend. Pour unifier les travaux entre l'API et le frontend, j'ai utilisé du Javascript pur (sans framework).",
+        "codeHref": "...",
+        "liveHref": "..."
+    },
+    {
+        "image": {
+            "src": "./assets/images/projects/screenshot-???.png",
+            "alt": "website screenshot"
+        },
+        "title": "Kasa",
+        "content": "Incoming...",
+        "codeHref": "...",
+        "liveHref": "..."
+    }
+]
