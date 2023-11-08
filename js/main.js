@@ -28,71 +28,74 @@ logo.addEventListener("click", () => {
 //**************************** SECTION PROJECTS ****************************// 
 // Ajout dynamique des projets
 
-fetch("../assets/data/projects.json")
-    .then(res => res.json())
-    .then(data => {
-        data.forEach((projectData) => {
-            const projectContainer = document.createElement('div');
-            projectContainer.className = 'project-container';
+import data from "../assets/data/projects.json" assert { type: 'json' };
+console.log(data);
 
-            const projectImgContainer = document.createElement('div');
-            projectImgContainer.className = 'project-img-container';
+data.forEach((projectData) => {
+    const projectContainer = document.createElement('div');
+    projectContainer.className = 'project-container';
 
-            const projectImage = document.createElement('img');
-            projectImage.src = projectData.image.src;
-            projectImage.alt = projectData.image.alt;
+    const projectImgContainer = document.createElement('div');
+    projectImgContainer.className = 'project-img-container';
 
-            projectImgContainer.appendChild(projectImage);
+    const projectImage = document.createElement('img');
+    projectImage.src = projectData.image.src;
+    projectImage.alt = projectData.image.alt;
 
-            const projectTitle = document.createElement('h3');
-            projectTitle.textContent = projectData.title;
+    projectImgContainer.appendChild(projectImage);
 
-            const projectDescription = document.createElement('p');
-            projectDescription.innerHTML = projectData.content;
+    const projectTitle = document.createElement('h3');
+    projectTitle.textContent = projectData.title;
 
-            const projectLinks = document.createElement('div');
-            projectLinks.className = 'project-links';
+    const projectDescription = document.createElement('p');
+    projectDescription.innerHTML = projectData.content;
 
-            const githubLink = document.createElement('a');
-            githubLink.href = projectData.codeHref;
-            githubLink.target = "_blank";
-            githubLink.textContent = 'Code';
-            const githubIcon = document.createElement('img');
-            githubIcon.src = './assets/images/icons/icon-github.png';
-            githubIcon.alt = 'Icône GitHub';
-            githubLink.appendChild(githubIcon);
+    const projectLinks = document.createElement('div');
+    projectLinks.className = 'project-links';
 
-            const liveLink = document.createElement('a');
-            liveLink.href = projectData.liveHref;
-            liveLink.target = "_blank";
-            liveLink.textContent = 'Live';
-            const liveIcon = document.createElement('img');
-            liveIcon.src = './assets/images/icons/icon-external-link.png';
-            liveIcon.alt = 'Icône de lien externe';
-            liveLink.appendChild(liveIcon);
+    const githubLink = document.createElement('a');
+    githubLink.href = projectData.codeHref;
+    githubLink.target = "_blank";
+    githubLink.textContent = 'Code';
+    const githubIcon = document.createElement('img');
+    githubIcon.src = './assets/images/icons/icon-github.png';
+    githubIcon.alt = 'Icône GitHub';
+    githubLink.appendChild(githubIcon);
 
-            projectLinks.appendChild(githubLink);
-            projectLinks.appendChild(liveLink);
+    const liveLink = document.createElement('a');
+    liveLink.href = projectData.liveHref;
+    liveLink.target = "_blank";
+    liveLink.textContent = 'Live';
+    const liveIcon = document.createElement('img');
+    liveIcon.src = './assets/images/icons/icon-external-link.png';
+    liveIcon.alt = 'Icône de lien externe';
+    liveLink.appendChild(liveIcon);
 
-            projectContainer.appendChild(projectImgContainer);
-            projectContainer.appendChild(projectTitle);
-            projectContainer.appendChild(projectDescription);
-            projectContainer.appendChild(projectLinks);
+    projectLinks.appendChild(githubLink);
+    projectLinks.appendChild(liveLink);
 
-            projects.appendChild(projectContainer);
-        });
+    projectContainer.appendChild(projectImgContainer);
+    projectContainer.appendChild(projectTitle);
+    projectContainer.appendChild(projectDescription);
+    projectContainer.appendChild(projectLinks);
 
-        // Fonction pour faire défiler l'image du projet
-        let imgProjectContainer = document.querySelectorAll(".project-img-container");
-        const imgProject = document.querySelectorAll(".project-img-container img");
+    projects.appendChild(projectContainer);
+});
 
+// Fonction pour faire défiler l'image du projet
+const imgProject = document.querySelectorAll(".project-img-container img");
 
-        for (let i = 0; i < imgProjectContainer.length; i++) {
-            imgProjectContainer[i].addEventListener("click", () => {
-                imgProject[i].classList.toggle("active");
-            })
-        }
+for (let i = 0; i < imgProject.length; i++) {
+    imgProject[i].addEventListener("click", () => {
+        imgProject[i].classList.toggle("active");
     })
-    .catch(e => {
-        console.log(e);
-    })
+}
+
+// fetch("../assets/data/projects.json")
+//     .then(res => res.json())
+//     .then(data => {
+        
+//     })
+//     .catch(e => {
+//         console.log(e);
+//     })
