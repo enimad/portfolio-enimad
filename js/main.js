@@ -35,7 +35,7 @@ const projectsData = [
             alt: "Kasa website screenshot"
         },
         title: "Kasa",
-        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site avec le framework React</span>. Il s'agit d'un site présentant une page d'<span>accueil</span>, une page par <span>logement</span>, une page <span>à propos</span>, ainsi qu'une page <span>erreur</span> si l'URL n'existe pas. Cette application React a été codée en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> et <span>JSX</span>",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site avec le framework React</span>. Il s'agit d'un site présentant une page d'<span>accueil</span>, une page par <span>logement</span>, une page <span>à propos</span>, ainsi qu'une page <span>erreur</span> si l'URL n'existe pas. J'ai codé cette application React en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> et <span>JSX</span>.",
         codeHref: "https://github.com/enimad/Kasa",
         liveHref: "https://enimad.github.io/Kasa"
     },
@@ -45,7 +45,7 @@ const projectsData = [
             alt: "Ohmyfood website screenshot"
         },
         title: "Ohmyfood",
-        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site “mobile first”</span> qui répertorie les menus de restaurants gastronomiques, en respectant les animations et comportements présentés sur la maquette Figma. Ce site a été codé en <span>HTML</span>, <span>CSS</span>, et <span>SCSS</span> en utilisant le <span>préprocesseur Sass</span>.",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site “mobile first”</span> qui répertorie les menus de restaurants gastronomiques, en respectant les animations et comportements présentés sur la maquette Figma. J'ai codé ce site en <span>HTML</span>, <span>CSS</span>, et <span>SCSS</span> en utilisant le <span>préprocesseur Sass</span>.",
         codeHref: "https://github.com/enimad/Ohmyfood",
         liveHref: "https://enimad.github.io/Ohmyfood/"
     },
@@ -55,7 +55,7 @@ const projectsData = [
             alt: "Booki website screenshot"
         },
         title: "Booki",
-        content: "Il s'agit d'un projet OpenClassrooms ayant pour but d'<span>intégrer la maquette d'une page d'accueil</span> d'un site similaire à Airbnb. Ce site a été codé en <span>HTML</span> et <span>CSS</span>.",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but d'<span>intégrer la maquette d'une page d'accueil</span> d'un site similaire à Airbnb. J'ai codé ce site en <span>HTML</span> et <span>CSS</span>.",
         codeHref: "https://github.com/enimad/Booki",
         liveHref: "https://enimad.github.io/Booki/"
     }
@@ -88,7 +88,7 @@ projectsData.forEach((projectData) => {
     githubLink.target = "_blank";
     githubLink.textContent = 'Code';
     const githubIcon = document.createElement('img');
-    githubIcon.src = './assets/images/icons/icon-github.png';
+    githubIcon.src = './assets/images/icons/icon-github-black.png';
     githubIcon.alt = 'Icône GitHub';
     githubLink.appendChild(githubIcon);
 

@@ -290,9 +290,6 @@ footer .social-networks-container {
   display: flex;
   gap: 15px;
 }
-footer .social-networks-container img {
-  filter: invert(1);
-}
 footer .social-networks-container a {
   display: flex;
   align-items: center;
