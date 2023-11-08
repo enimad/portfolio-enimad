@@ -1,5 +1,5 @@
-//**************************** SECTION HEADER ****************************//
-// Fonction pour ouvrir le menu de nav mobile
+//**************************** HEADER SECTION ****************************//
+// To open nav mobile menu
 const navMobile = document.querySelector(".nav-mobile");
 
 nav.addEventListener("click", () => {
@@ -7,7 +7,7 @@ nav.addEventListener("click", () => {
     navMobile.classList.toggle("active");
 })
 
-// Fonction qui assure la fermeture du menu de nav mobile en cas de clic sur les liens
+// To close nav mobile menu in case of a click on the links
 const links = document.querySelectorAll(".nav-mobile li");
 
 links.forEach((link) => {
@@ -17,7 +17,7 @@ links.forEach((link) => {
     })
 })
 
-// Fonction qui assure la fermeture du menu de nav mobile en cas de clic sur le logo du site
+// To close nav mobile menu in case of a click on the website logo
 const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", () => {
@@ -25,13 +25,43 @@ logo.addEventListener("click", () => {
     navMobile.classList.remove("active");
 })
 
-//**************************** SECTION PROJECTS ****************************// 
-// Ajout dynamique des projets
+//**************************** PROJECTS SECTION ****************************// 
+// Adding projects data
 
-import data from "../assets/data/projects.json" assert { type: 'json' };
-console.log(data);
+const projectsData = [
+    {
+        image: {
+            src: "./assets/images/projects/screenshot-kasa.png",
+            alt: "Kasa website screenshot"
+        },
+        title: "Kasa",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site avec le framework React</span>. Il s'agit d'un site présentant une page d'<span>accueil</span>, une page par <span>logement</span>, une page <span>à propos</span>, ainsi qu'une page <span>erreur</span> si l'URL n'existe pas. Cette application React a été codée en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> et <span>JSX</span>",
+        codeHref: "https://github.com/enimad/Kasa",
+        liveHref: "https://enimad.github.io/Kasa"
+    },
+    {
+        image: {
+            src: "./assets/images/projects/screenshot-ohmyfood.png",
+            alt: "Ohmyfood website screenshot"
+        },
+        title: "Ohmyfood",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site “mobile first”</span> qui répertorie les menus de restaurants gastronomiques, en respectant les animations et comportements présentés sur la maquette Figma. Ce site a été codé en <span>HTML</span>, <span>CSS</span>, et <span>SCSS</span> en utilisant le <span>préprocesseur Sass</span>.",
+        codeHref: "https://github.com/enimad/Ohmyfood",
+        liveHref: "https://enimad.github.io/Ohmyfood/"
+    },
+    {
+        image: {
+            src: "./assets/images/projects/screenshot-booki.png",
+            alt: "Booki website screenshot"
+        },
+        title: "Booki",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but d'<span>intégrer la maquette d'une page d'accueil</span> d'un site similaire à Airbnb. Ce site a été codé en <span>HTML</span> et <span>CSS</span>.",
+        codeHref: "https://github.com/enimad/Booki",
+        liveHref: "https://enimad.github.io/Booki/"
+    }
+]
 
-data.forEach((projectData) => {
+projectsData.forEach((projectData) => {
     const projectContainer = document.createElement('div');
     projectContainer.className = 'project-container';
 
@@ -82,7 +112,7 @@ data.forEach((projectData) => {
     projects.appendChild(projectContainer);
 });
 
-// Fonction pour faire défiler l'image du projet
+// To allow the scroll on click of the project picture
 const imgProject = document.querySelectorAll(".project-img-container img");
 
 for (let i = 0; i < imgProject.length; i++) {
@@ -90,12 +120,3 @@ for (let i = 0; i < imgProject.length; i++) {
         imgProject[i].classList.toggle("active");
     })
 }
-
-// fetch("../assets/data/projects.json")
-//     .then(res => res.json())
-//     .then(data => {
-        
-//     })
-//     .catch(e => {
-//         console.log(e);
-//     })
