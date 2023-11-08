@@ -11,33 +11,25 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
-
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
-
 * h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-
 * h2 {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
-
 * h3 {
   font-size: 1.2rem;
   color: rgb(60, 60, 60);
 }
-
 * p {
   text-align: justify;
 }
-
 * span {
   color: rgb(12, 103, 189);
 }
@@ -48,7 +40,6 @@ header {
   z-index: 100;
   background-color: #fff;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -56,27 +47,22 @@ header nav {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 header nav .logo {
   font-size: 1.3rem;
   font-weight: 600;
 }
-
 header nav span {
   font-size: 1.3rem;
   color: rgb(12, 103, 189);
 }
-
 header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header nav ul li {
   display: none;
 }
-
 header nav ul button {
   position: relative;
   display: flex;
@@ -89,7 +75,6 @@ header nav ul button {
   width: 20px;
   cursor: pointer;
 }
-
 header nav ul button::after {
   position: absolute;
   content: "";
@@ -98,33 +83,26 @@ header nav ul button::after {
   width: 100%;
   height: 100%;
 }
-
 header nav ul button span {
   width: 100%;
   height: 2px;
   background-color: #000;
 }
-
 header nav ul button.is-active {
   justify-content: center;
 }
-
 header nav ul button.is-active span {
   transition: 0.3s ease-in;
 }
-
 header nav ul button.is-active span:first-child {
   transform: translateY(50%) rotate(45deg);
 }
-
 header nav ul button.is-active span:nth-child(2) {
   display: none;
 }
-
 header nav ul button.is-active span:last-child {
   transform: translateY(-50%) rotate(-45deg);
 }
-
 header .nav-mobile {
   display: flex;
   flex-direction: column;
@@ -140,11 +118,9 @@ header .nav-mobile {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-
 header .nav-mobile.active {
   right: 0;
 }
-
 header .nav-mobile a {
   font-size: 1.6rem;
   font-weight: 500;
@@ -158,28 +134,23 @@ main .section-hero {
   align-items: center;
   background-color: #f8f8f8;
 }
-
 main .section-hero img {
   width: 320px;
   height: auto;
 }
-
 main .section-hero h1,
 main .section-hero p {
   text-align: center;
 }
-
 main .section-hero p a {
   background-color: rgb(12, 103, 189);
   color: #fff;
   padding: 0 5px;
   border-radius: 5px;
 }
-
 main .section-hero h2 {
   margin: 45px 0 10px;
 }
-
 main .section-hero .stack-icons {
   padding: 20px 0;
   border-top: solid 1px rgb(60, 60, 60);
@@ -188,29 +159,23 @@ main .section-hero .stack-icons {
   justify-content: space-evenly;
   width: 100%;
 }
-
 main .section-hero .stack-icons img {
   width: 45px;
   height: 45px;
 }
-
-main .section-hero .stack-icons img:nth-child(4),
-main .section-hero .stack-icons img:nth-child(5) {
+main .section-hero .stack-icons img:nth-child(4), main .section-hero .stack-icons img:nth-child(5) {
   border-radius: 8px;
 }
-
 main .section-about {
   padding: 30px 20px;
+  margin-bottom: 30px;
 }
-
 main .section-about p {
   margin-bottom: 25px;
 }
-
 main .section-about .container-btn {
   text-align: center;
 }
-
 main .section-about .container-btn a {
   background-color: #fff;
   padding: 5px 15px;
@@ -218,20 +183,16 @@ main .section-about .container-btn a {
   border: solid 2px;
   font-weight: 600;
 }
-
 main .section-projects {
   padding: 30px 20px;
   background-color: #f8f8f8;
 }
-
 main .section-projects .section-intro {
   margin-bottom: 30px;
 }
-
 main .section-projects .section-intro span {
   color: rgb(12, 103, 189);
 }
-
 main .section-projects .project-container {
   display: flex;
   flex-direction: column;
@@ -243,7 +204,6 @@ main .section-projects .project-container {
   padding: 20px;
   border-radius: 13px;
 }
-
 main .section-projects .project-container .project-img-container {
   width: 100%;
   height: 200px;
@@ -252,7 +212,6 @@ main .section-projects .project-container .project-img-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-
 main .section-projects .project-container .project-img-container img {
   transition: all 3s ease-in-out;
   display: block;
@@ -261,16 +220,13 @@ main .section-projects .project-container .project-img-container img {
   left: 0;
   width: 100%;
 }
-
 main .section-projects .project-container .project-img-container img.active {
   top: 100%;
   transform: translateY(-100%);
 }
-
 main .section-projects .project-container p {
   text-align: center;
 }
-
 main .section-projects .project-container .project-links {
   display: flex;
   justify-content: space-evenly;
@@ -278,7 +234,6 @@ main .section-projects .project-container .project-links {
   width: 100%;
   margin-top: 10px;
 }
-
 main .section-projects .project-container .project-links a {
   display: flex;
   align-items: center;
@@ -289,11 +244,9 @@ main .section-projects .project-container .project-links a {
   border: solid 2px;
   font-weight: 700;
 }
-
 main .section-contact {
   padding: 30px 20px;
 }
-
 main .section-contact a {
   display: flex;
   justify-content: center;
@@ -308,7 +261,6 @@ main .section-contact a {
   margin: 30px auto 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 main .section-contact a img {
   width: 30px;
   height: auto;
@@ -322,20 +274,16 @@ footer {
   padding: 20px;
   background-color: rgb(60, 60, 60);
 }
-
 footer p {
   color: #fff;
 }
-
 footer .social-networks-container {
   display: flex;
   gap: 15px;
 }
-
 footer .social-networks-container img {
   filter: invert(1);
 }
-
 footer .social-networks-container a {
   display: flex;
   align-items: center;
