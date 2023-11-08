@@ -55,6 +55,7 @@ fetch("../assets/data/projects.json")
 
             const githubLink = document.createElement('a');
             githubLink.href = projectData.codeHref;
+            githubLink.target = "_blank";
             githubLink.textContent = 'Code';
             const githubIcon = document.createElement('img');
             githubIcon.src = './assets/images/icons/icon-github.png';
@@ -63,6 +64,7 @@ fetch("../assets/data/projects.json")
 
             const liveLink = document.createElement('a');
             liveLink.href = projectData.liveHref;
+            liveLink.target = "_blank";
             liveLink.textContent = 'Live';
             const liveIcon = document.createElement('img');
             liveIcon.src = './assets/images/icons/icon-external-link.png';
