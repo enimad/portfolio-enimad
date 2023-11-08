@@ -1,13 +1,13 @@
 [
     {
         "image": {
-            "src": "./assets/images/projects/screenshot-booki.png",
-            "alt": "Booki website screenshot"
+            "src": "./assets/images/projects/screenshot-kasa.png",
+            "alt": "Kasa website screenshot"
         },
-        "title": "Booki",
-        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but d'intégrer la maquette d'une page d'accueil d'un site similaire à Airbnb. Ce site a été codé en <span>HTML</span> et CSS.",
-        "codeHref": "https://github.com/enimad/Booki",
-        "liveHref": "https://enimad.github.io/Booki/"
+        "title": "Kasa",
+        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but de développer un site en React. L'objectif était de développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives) et toutes les contraintes techniques et fonctionnelles formulées par l'équipe de Kasa.",
+        "codeHref": "https://github.com/enimad/Kasa",
+        "liveHref": "https://enimad.github.io/Kasa"
     },
     {
         "image": {
@@ -21,12 +21,12 @@
     },
     {
         "image": {
-            "src": "./assets/images/projects/screenshot-kasa.png",
-            "alt": "Kasa website screenshot"
+            "src": "./assets/images/projects/screenshot-booki.png",
+            "alt": "Booki website screenshot"
         },
-        "title": "Kasa",
-        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but de développer un site en React. L'objectif était de développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives) et toutes les contraintes techniques et fonctionnelles formulées par l'équipe de Kasa.",
-        "codeHref": "https://github.com/enimad/Kasa",
-        "liveHref": "https://enimad.github.io/Kasa"
+        "title": "Booki",
+        "content": "Il s'agit d'un projet OpenClassrooms ayant pour but d'intégrer la maquette d'une page d'accueil d'un site similaire à Airbnb. Ce site a été codé en <span>HTML</span> et CSS.",
+        "codeHref": "https://github.com/enimad/Booki",
+        "liveHref": "https://enimad.github.io/Booki/"
     }
 ]
