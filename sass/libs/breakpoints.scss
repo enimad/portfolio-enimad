@@ -1,0 +1,31 @@
+// **************** Landon Schropp Method **************** //
+
+$tablet-width: 568px;
+$small-screen-width: 768px;
+$desktop-width: 1024px;
+$large-screen-width: 1201px;
+
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media only screen and (min-width: #{$small-screen-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media only screen and (min-width: #{$large-screen-width}) {
+        @content;
+    }
+}

@@ -1,0 +1,90 @@
+@import "./breakpoints.scss";
+
+* {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+@include tablet {
+    * {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.415rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+}
+
+@include small-screen {
+    * {
+        font-size: 1.115rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.445rem;
+    }
+
+    h3 {
+        font-size: 1.315rem;
+    }
+
+}
+
+@include desktop {
+    * {
+        font-size: 1.145rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.485rem;
+    }
+
+    h3 {
+        font-size: 1.345rem;
+    }
+
+}
+
+@include large-screen {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+}

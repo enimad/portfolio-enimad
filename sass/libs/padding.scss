@@ -1,0 +1,67 @@
+@import "./breakpoints.scss";
+
+section {
+    padding: 1.5rem;
+
+    &.section-hero {
+        padding-top: 0;
+    }
+}
+
+nav,
+footer {
+    padding: 0.7rem 1rem;
+}
+
+
+
+@include tablet {
+
+    section {
+        padding: 3rem;
+
+        &.section-hero {
+            padding-top: 2rem;
+        }
+    }
+
+    nav,
+    footer {
+        padding: 0.6rem 1.5rem;
+    }
+
+    footer {
+        margin-top: -20px;
+
+    }
+}
+
+@include small-screen {
+
+    section {
+        padding: 3rem;
+
+        &.section-hero {
+            padding-top: 6rem;
+        }
+    }
+
+    nav,
+    footer {
+        padding: 0.5rem 2.5rem;
+    }
+
+}
+
+@include desktop {
+
+    section {
+        padding: 3rem 9rem;
+    }
+
+    nav,
+    footer {
+        padding: 0.5rem 3rem;
+    }
+
+}

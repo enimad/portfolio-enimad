@@ -74,6 +74,9 @@ projectsData.forEach((projectData) => {
 
     projectImgContainer.appendChild(projectImage);
 
+    const projectContentContainer = document.createElement('div');
+    projectContentContainer.className = 'project-content-container';
+
     const projectTitle = document.createElement('h3');
     projectTitle.textContent = projectData.title;
 
@@ -104,10 +107,13 @@ projectsData.forEach((projectData) => {
     projectLinks.appendChild(githubLink);
     projectLinks.appendChild(liveLink);
 
+    projectContentContainer.appendChild(projectTitle);
+    projectContentContainer.appendChild(projectDescription);
+    projectContentContainer.appendChild(projectLinks);
+
     projectContainer.appendChild(projectImgContainer);
-    projectContainer.appendChild(projectTitle);
-    projectContainer.appendChild(projectDescription);
-    projectContainer.appendChild(projectLinks);
+    projectContainer.appendChild(projectContentContainer);
+
 
     projects.appendChild(projectContainer);
 });
