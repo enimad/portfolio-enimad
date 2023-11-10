@@ -14,9 +14,9 @@ h3 {
   font-size: 1.2rem;
 }
 
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   * {
-    font-size: 1.1rem;
+    font-size: 1.015rem;
   }
   h1 {
     font-size: 1.6rem;
@@ -29,9 +29,6 @@ h3 {
   }
 }
 @media only screen and (min-width: 768px) {
-  * {
-    font-size: 1.115rem;
-  }
   h1 {
     font-size: 1.7rem;
   }
@@ -42,7 +39,7 @@ h3 {
     font-size: 1.315rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   * {
     font-size: 1.145rem;
   }
@@ -56,7 +53,7 @@ h3 {
     font-size: 1.345rem;
   }
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1580px) {
   h1 {
     font-size: 2rem;
   }
@@ -71,7 +68,7 @@ section {
   padding: 1.5rem;
 }
 section.section-hero {
-  padding-top: 0;
+  padding: 0 1.5rem;
 }
 
 nav,
@@ -79,12 +76,9 @@ footer {
   padding: 0.7rem 1rem;
 }
 
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   section {
     padding: 3rem;
-  }
-  section.section-hero {
-    padding-top: 2rem;
   }
   nav,
   footer {
@@ -98,17 +92,26 @@ footer {
   section {
     padding: 3rem;
   }
-  section.section-hero {
-    padding-top: 6rem;
-  }
   nav,
   footer {
     padding: 0.5rem 2.5rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   section {
-    padding: 3rem 9rem;
+    padding: 3rem 14rem;
+  }
+  section.section-hero {
+    padding: 0 12rem;
+  }
+  nav,
+  footer {
+    padding: 0.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1580px) {
+  section {
+    padding: 4rem 20rem;
   }
   nav,
   footer {
@@ -118,9 +121,9 @@ footer {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 4.5rem;
+  scroll-padding-top: 3rem;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   html {
     scroll-padding-top: 1.25rem;
   }
@@ -173,7 +176,7 @@ header nav .logo {
 header nav .logo span {
   font-size: 1.3rem;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   header nav .logo:hover {
     font-size: 0;
   }
@@ -204,7 +207,7 @@ header nav ul li {
     display: unset;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   header nav ul li a {
     font-weight: 500;
   }
@@ -291,24 +294,43 @@ main .section-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #f8f8f8;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 670px) {
   main .section-hero .hero-img-content {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 70px;
   }
 }
 main .section-hero .hero-img {
   display: block;
   margin: auto;
-  width: 320px;
+  width: 280px;
   height: auto;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 670px) {
+  main .section-hero .hero-img {
+    margin: 0 0 0 15px;
+  }
 }
 @media only screen and (min-width: 768px) {
   main .section-hero .hero-img {
     width: 300px;
-    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  main .section-hero .hero-img {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1580px) {
+  main .section-hero .hero-img {
+    width: 450px;
+    margin-left: 70px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -316,14 +338,30 @@ main .section-hero .hero-img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
   }
 }
 main .section-hero h1 {
-  margin: 10px 0 30px;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 768px) {
+  main .section-hero h1 {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  main .section-hero h1 {
+    max-width: 28rem;
+  }
 }
 main .section-hero h1,
 main .section-hero p {
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  main .section-hero p {
+    max-width: 35rem;
+  }
 }
 main .section-hero p a {
   background-color: rgb(12, 103, 189);
@@ -331,7 +369,7 @@ main .section-hero p a {
   padding: 0 5px;
   border-radius: 5px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-hero p a:hover {
     opacity: 0.8;
   }
@@ -340,7 +378,7 @@ main .section-hero .stack-section {
   text-align: center;
   width: 100%;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   main .section-hero .stack-section {
     display: flex;
     align-items: center;
@@ -353,15 +391,15 @@ main .section-hero .stack-section {
     margin-top: 90px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-hero .stack-section {
-    width: 70%;
+    width: 65%;
   }
 }
 main .section-hero .stack-section h2 {
   margin: 45px 0 10px;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   main .section-hero .stack-section h2 {
     margin: 0;
     font-size: 1rem;
@@ -376,7 +414,7 @@ main .section-hero .stack-section .stack-icons {
   justify-content: space-evenly;
   width: 100%;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   main .section-hero .stack-section .stack-icons {
     padding: 0;
     border-top: none;
@@ -390,7 +428,7 @@ main .section-hero .stack-section .stack-icons img {
   width: 45px;
   height: auto;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-hero .stack-section .stack-icons img {
     width: 55px;
   }
@@ -411,7 +449,7 @@ main .section-about .container-btn a {
   border: solid 2px;
   font-weight: 600;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-about .container-btn a:hover {
     background-color: rgb(30, 103, 189);
     border: solid 2px #fff;
@@ -453,7 +491,7 @@ main .section-projects .project-container .project-img-container {
   cursor: pointer;
   transition: 0.75s ease-in-out;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 670px) {
   main .section-projects .project-container .project-img-container {
     height: 300px;
   }
@@ -461,10 +499,15 @@ main .section-projects .project-container .project-img-container {
 @media only screen and (min-width: 768px) {
   main .section-projects .project-container .project-img-container {
     margin: 0 35px 0 0;
+    height: 330px;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  main .section-projects .project-container .project-img-container {
     height: 400px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-projects .project-container .project-img-container:hover {
     opacity: 0.85;
   }
@@ -506,13 +549,26 @@ main .section-projects .project-container .project-content-container .project-li
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-width: 40%;
+  min-width: 35%;
   padding: 5px 15px;
   border-radius: 8px;
   border: solid 2px;
   font-weight: 700;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 670px) {
+  main .section-projects .project-container .project-content-container .project-links a {
+    min-width: 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .section-projects .project-container .project-content-container .project-links a {
+    min-width: 35%;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  main .section-projects .project-container .project-content-container .project-links a {
+    min-width: 40%;
+  }
   main .section-projects .project-container .project-content-container .project-links a:hover {
     background-color: rgb(30, 103, 189);
     border: solid 2px #fff;
@@ -536,7 +592,11 @@ main .section-contact .message {
   margin: 30px auto 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
+  main .section-contact .message {
+    margin: 60px auto 45px;
+    height: 3rem;
+  }
   main .section-contact .message:hover {
     opacity: 0.9;
   }
@@ -554,7 +614,7 @@ main .section-contact .up {
   right: 5px;
   padding: 1px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   main .section-contact .up:hover {
     text-decoration: underline;
   }
@@ -582,7 +642,7 @@ footer .social-networks-container a {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   footer .social-networks-container a:hover img {
     filter: invert(1);
   }

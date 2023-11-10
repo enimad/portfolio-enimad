@@ -18,7 +18,7 @@ h3 {
 
 @include tablet {
     * {
-        font-size: 1.1rem;
+        font-size: 1.015rem;
     }
 
     h1 {
@@ -36,10 +36,6 @@ h3 {
 }
 
 @include small-screen {
-    * {
-        font-size: 1.115rem;
-    }
-
     h1 {
         font-size: 1.7rem;
     }

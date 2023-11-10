@@ -45,7 +45,7 @@ const projectsData = [
             alt: "Ohmyfood website screenshot"
         },
         title: "Ohmyfood",
-        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site “mobile first”</span> qui répertorie les menus de restaurants gastronomiques, en respectant les animations et comportements présentés sur la maquette Figma. J'ai codé ce site en <span>HTML</span>, <span>CSS</span>, et <span>SCSS</span> en utilisant le <span>préprocesseur Sass</span>.",
+        content: "Il s'agit d'un projet OpenClassrooms ayant pour but de <span>développer un site “mobile first”</span> qui répertorie les menus de restaurants, en respectant les animations et comportements présentés sur la maquette Figma. J'ai codé ce site en <span>HTML</span>, <span>CSS</span>, et <span>Scss</span> en utilisant le <span>préprocesseur Sass</span>.",
         codeHref: "https://github.com/enimad/Ohmyfood",
         liveHref: "https://enimad.github.io/Ohmyfood/"
     },
