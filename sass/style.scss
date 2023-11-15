@@ -106,13 +106,15 @@ header {
                     display: unset;
                 }
 
-                @include desktop {
+                @include small-screen {
                     a {
                         font-weight: 500;
 
-                        &:hover {
-                            color: rgb(12, 103, 189);
-                            text-decoration: underline;
+                        @include desktop {
+                            &:hover {
+                                color: rgb(12, 103, 189);
+                                text-decoration: underline;
+                            }
                         }
                     }
 
@@ -210,12 +212,16 @@ header {
 main {
     .section {
         &-hero {
-            height: 100vh;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background-color: #f8f8f8;
+
+            @include tablet {
+                height: 100vh;
+            }
 
             .hero-img-content {
                 @include tablet {
