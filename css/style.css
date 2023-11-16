@@ -299,7 +299,7 @@ main .section-hero {
   justify-content: center;
   background-color: #f8f8f8;
 }
-@media only screen and (min-width: 671px) {
+@media only screen and (min-width: 768px) {
   main .section-hero {
     height: 100vh;
   }
